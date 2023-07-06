@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/about/style.css">
+  </head>
+  <body>
+    <script>
+      // Show the loading screen
+      const loadingScreen = document.createElement('iframe');
+      loadingScreen.src = 'S:/downs/fsss-main/fsss-main/public/about/loading.html';
+      loadingScreen.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        border: none;
+        z-index: 10000;
+      `;
+      document.body.appendChild(loadingScreen);
+
+      // Hide the loading screen when the page has finished loading
+      window.addEventListener('load', () => {
+        loadingScreen.remove();
+        document.getElementById('page-wrapper').style.display = 'block';
+      });
+    </script>
+
+    <div id="page-wrapper" style="display:none;">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="about">
+          <div class="container">
+            <h1>About Me</h1>
+            <div class="row">
+              <div class="col">
+                <p>Hi, I'm John Doe. I'm a web developer with a passion for creating beautiful and functional websites.</p>
+                <p>I have experience in HTML, CSS, JavaScript, and various front-end frameworks such as React and Angular.</p>
+              </div>
+              <div class="col">
+                <img src="/static/about/profile-pic.jpg" alt="Profile Picture">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="skills">
+          <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-wrapper">
+              <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar html"></div>
+              </div>
+              <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar css"></div>
+              </div>
+              <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar js"></div>
+              </div>
+              <div class="skill">
+                <div class="skill-name">React</div>
+                <div class="skill-bar react"></div>
+              </div>
+              <div class="skill">
+                <div class="skill-name">Angular</div>
+                <div class="skill-bar angular"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="projects">
+          <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+              <div class="project">
+                <img src="/static/about/project1.jpg" alt="Project 1">
+                <h3>Project1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula risus a dui luctus maximus. Duis ut orci augue.</p>
+              </div>
+              <div class="project">
+                <img src="/static/about/project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Nullam ut ipsum ut elit porta pellentesque. Aliquam at neque vitae nunc tincidunt bibendum.</p>
+              </div>
+              <div class="project">
+                <img src="/static/about/project3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Proin congue dui eget erat consequat, quis rhoncus dolor suscipit. Sed accumsan, elit eget lacinia lacinia, turpis arcu faucibus libero, ac rutrum mi ex et magna.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <textarea placeholder="Message"></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2023 John Doe</p>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+      <script src="/static/about/app.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,276 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+  
+  .col {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Main styles */
+  main {
+    padding: 40px 0;
+  }
+  
+  section {
+    padding: 80px 0;
+  }
+  
+  section h1, section h2, section h3 {
+    margin-bottom: 20px;
+  }
+  
+  /* About Me styles */
+  section#about {
+    background-color: #fff;
+  }
+  
+  section#about img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+/* Skills styles */
+section#skills {
+    background-color: #f7f7f7;
+  }
+  
+  .skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .skill {
+    width: 20%;
+  }
+  
+  .skill-name {
+    margin-bottom: 10px;
+  }
+  
+  .skill-bar {
+    height: 10px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .html {
+    width: 0;
+    background-color: #f16529;
+  }
+  
+  .css {
+    width: 0;
+    background-color: #2965f1;
+  }
+  
+  .js {
+    width: 0;
+    background-color: #f0db4f;
+  }
+  
+  .react {
+    width: 0;
+    background-color: #61dafb;
+  }
+  
+  .angular {
+    width: 0;
+    background-color: #dd0031;
+  }
+  
+  /* Projects styles */
+  section#projects {
+    background-color: #fff;
+  }
+  
+  .project {
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .project h3 {
+    margin-bottom: 10px;
+  }
+  
+  /* Contact Me styles */
+  section#contact {
+    background-color: #f7f7f7;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+/* Animations */
+@keyframes html {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+  
+  @keyframes css {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+  
+  @keyframes js {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  
+  @keyframes react {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 60%;
+    }
+  }
+  
+  @keyframes angular {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+  
+  .skill-bar.html {
+    animation: html 1.5s ease-out forwards;
+  }
+  
+  .skill-bar.css {
+    animation: css 1.5s ease-out forwards;
+  }
+  
+  .skill-bar.js {
+    animation: js 1.5s ease-out forwards;
+  }
+  
+  .skill-bar.react {
+    animation: react 1.5s ease-out forwards;
+  }
+  
+  .skill-bar.angular {
+    animation: angular 1.5s ease-out forwards;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+  }
+
+  
