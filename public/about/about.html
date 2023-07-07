@@ -1,35 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>About Me</title>
+    <title>Contact Us</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/about/style.css">
   </head>
   <body>
-    <script>
-      // Show the loading screen
-      const loadingScreen = document.createElement('iframe');
-      loadingScreen.src = 'S:/downs/fsss-main/fsss-main/public/about/loading.html';
-      loadingScreen.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        border: none;
-        z-index: 10000;
-      `;
-      document.body.appendChild(loadingScreen);
-
-      // Hide the loading screen when the page has finished loading
-      window.addEventListener('load', () => {
-        loadingScreen.remove();
-        document.getElementById('page-wrapper').style.display = 'block';
-      });
-    </script>
-
-    <div id="page-wrapper" style="display:none;">
+    <div id="page-wrapper">
       <header>
         <nav>
           <ul>
@@ -43,21 +21,21 @@
       <main>
         <section id="about">
           <div class="container">
-            <h1>About Me</h1>
+            <h1 style="position: relative; top: 150px; font-size: 80px;">About Us</h1>
             <div class="row">
-              <div class="col">
-                <p>Hi, I'm John Doe. I'm a web developer with a passion for creating beautiful and functional websites.</p>
+              <div class="col" id="coll">
+                <p>Hi, We are Yusef and Adham. I'm a web developer with a passion for creating beautiful and functional websites.</p>
                 <p>I have experience in HTML, CSS, JavaScript, and various front-end frameworks such as React and Angular.</p>
               </div>
               <div class="col">
-                <img src="/static/about/profile-pic.jpg" alt="Profile Picture">
+                <img src="/static/about/img2.jpg" alt="Profile Picture">
               </div>
             </div>
           </div>
         </section>
         <section id="skills">
           <div class="container">
-            <h2>Skills</h2>
+            <h2 style="color: white;">Skills</h2>
             <div class="skills-wrapper">
               <div class="skill">
                 <div class="skill-name">HTML</div>
@@ -76,10 +54,14 @@
                 <div class="skill-bar react"></div>
               </div>
               <div class="skill">
-                <div class="skill-name">Angular</div>
+                <div class="skill-name">Node</div>
                 <div class="skill-bar angular"></div>
               </div>
-            </div>
+              <div class="skill">
+                <div class="skill-name">Express</div>
+                <div class="skill-bar angular" style="background-color: #dd0031;"></div>
+              </div>
+              
           </div>
         </section>
         <section id="projects">
@@ -87,37 +69,33 @@
             <h2>Projects</h2>
             <div class="row">
               <div class="project">
-                <img src="/static/about/project1.jpg" alt="Project 1">
-                <h3>Project1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula risus a dui luctus maximus. Duis ut orci augue.</p>
+                <img src="/static/about/image.png" alt="Project 1">
+                <h3>eStylish</h3>
+                <p>The world's fastest Trading Platform App</p>
               </div>
               <div class="project">
                 <img src="/static/about/project2.jpg" alt="Project 2">
                 <h3>Project 2</h3>
                 <p>Nullam ut ipsum ut elit porta pellentesque. Aliquam at neque vitae nunc tincidunt bibendum.</p>
               </div>
-              <div class="project">
-                <img src="/static/about/project3.jpg" alt="Project 3">
-                <h3>Project 3</h3>
-                <p>Proin congue dui eget erat consequat, quis rhoncus dolor suscipit. Sed accumsan, elit eget lacinia lacinia, turpis arcu faucibus libero, ac rutrum mi ex et magna.</p>
-              </div>
             </div>
           </div>
         </section>
         <section id="contact">
           <div class="container">
-            <h2>Contact Me</h2>
-            <form>
+            <h2 style="color: white;">Contact Me</h2>
+            <form onsubmit="handleSubmit3(event)">
               <input type="text" placeholder="Name">
               <input type="email" placeholder="Email">
               <textarea placeholder="Message"></textarea>
               <button type="submit">Send</button>
             </form>
+            <div id="test3"></div>
           </div>
         </section>
       </main>
       <footer>
-        <p>&copy; 2023 John Doe</p>
+        <p>&copy; 2023 MernStack</p>
       </footer>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
       <script src="/static/about/app.js"></script>
