@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/about/style.css">
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="about">
+          <div class="container">
+            <h1 style="position: relative; top: 150px; font-size: 80px;">About Us</h1>
+            <div class="row">
+              <div class="col" id="coll">
+                <p>Hi, We are Yusef and Adham. I'm a web developer with a passion for creating beautiful and functional websites.</p>
+                <p>I have experience in HTML, CSS, JavaScript, and various front-end frameworks such as React and Angular.</p>
+              </div>
+              <div class="col">
+                <img src="/static/about/img2.jpg" alt="Profile Picture">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="skills">
+          <div class="container">
+            <h2 style="color: white;">Skills</h2>
+            <div class="skills-wrapper">
+              <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar html"></div>
+              </div>
+              <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar css"></div>
+              </div>
+              <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar js"></div>
+              </div>
+              <div class="skill">
+                <div class="skill-name">React</div>
+                <div class="skill-bar react"></div>
+              </div>
+              <div class="skill">
+                <div class="skill-name">Node</div>
+                <div class="skill-bar angular"></div>
+              </div>
+              <div class="skill">
+                <div class="skill-name">Express</div>
+                <div class="skill-bar angular" style="background-color: #dd0031;"></div>
+              </div>
+              
+          </div>
+        </section>
+        <section id="projects">
+          <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+              <div class="project">
+                <img src="/static/about/image.png" alt="Project 1">
+                <h3>eStylish</h3>
+                <p>The world's fastest Trading Platform App</p>
+              </div>
+              <div class="project">
+                <img src="/static/about/project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Nullam ut ipsum ut elit porta pellentesque. Aliquam at neque vitae nunc tincidunt bibendum.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="container">
+            <h2 style="color: white;">Contact Me</h2>
+            <form onsubmit="handleSubmit3(event)">
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <textarea placeholder="Message"></textarea>
+              <button type="submit">Send</button>
+            </form>
+            <div id="test3"></div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2023 MernStack</p>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+      <script src="/static/about/app.js"></script>
+    </div>
+  </body>
+</html>
