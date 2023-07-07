@@ -12,7 +12,7 @@ var indexRouter = require('./routes/index');
 const loginRouter = require('./routes/login');
 const signupRouter = require('./routes/signup');
 const homeRouter = require('./routes/home');
-const getstartedRouter = require('./routes/getstarted');
+
 const aboutRouter = require('./routes/about');
 
 mongoose.connect('mongodb+srv://joeshirf:joo2330768@mern-stack-project.aiizvnr.mongodb.net/')
@@ -42,7 +42,7 @@ app.use('/', indexRouter);
 app.use('/login', loginRouter);
 app.use('/signup', signupRouter);
 app.use('/home', homeRouter);
-app.use('/getstarted', getstartedRouter);
+
 app.use('/about', aboutRouter);
 
 
