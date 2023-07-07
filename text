@@ -1,2 +1,3 @@
-test 2
-333
+.skills__ux2 {
+  width: 75%;
+}
